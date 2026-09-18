@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLACKFILE // Intelligence Division</title>
+
+    <meta
+        name="description"
+        content="A cinematic intelligence dossier interface."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         BACKGROUND SYSTEM
+    ========================================================== -->
+
+    <div class="background-grid"></div>
+    <div class="noise"></div>
+    <div class="scanlines"></div>
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <div class="brand">
+            <div class="brand-mark">BF</div>
+
+            <div class="brand-text">
+                <span>BLACK</span>
+                <strong>FILE</strong>
+            </div>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#briefing">Briefing</a>
+            <a href="#files">Case Files</a>
+            <a href="#network">Network</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <main>
+
+        <section class="hero" id="briefing">
+
+            <div class="hero-content">
+
+                <div class="classification">
+                    <span class="classification-dot"></span>
+                    CLASSIFIED // LEVEL 07
+                </div>
+
+                <p class="eyebrow">
+                    INTELLIGENCE DIVISION // ACTIVE
+                </p>
+
+                <h1>
+                    EVERYONE
+                    <span>HAS A FILE.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Intelligence is rarely about what people tell you.
+                    It's about what they leave behind.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#files" class="btn btn-primary">
+                        Access Files
+                        <span>→</span>
+                    </a>
+
+                    <a href="#network" class="btn btn-secondary">
+                        View Network
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-dossier">
+
+                <div class="dossier-header">
+                    <span>CASE // 001</span>
+                    <span>ACTIVE</span>
+                </div>
+
+                <div class="dossier-photo">
+
+                    <div class="portrait-placeholder">
+                        <span>IDENTITY</span>
+                        <strong>REDACTED</strong>
+                    </div>
+
+                    <div class="photo-stamp">
+                        CLASSIFIED
+                    </div>
+
+                </div>
+
+                <div class="dossier-information">
+
+                    <div>
+                        <small>SUBJECT</small>
+                        <strong>UNKNOWN</strong>
+                    </div>
+
+                    <div>
+                        <small>STATUS</small>
+                        <strong class="danger">ACTIVE</strong>
+                    </div>
+
+                    <div>
+                        <small>THREAT</small>
+                        <strong>LEVEL 07</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-location">
+                <span>LAT 38.9072° N</span>
+                <span>LON 77.0369° W</span>
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             BRIEFING
+        ====================================================== -->
+
+        <section class="briefing section">
+
+            <div class="section-label">
+                <span>01</span>
+                INTELLIGENCE BRIEFING
+            </div>
+
+            <div class="briefing-layout">
+
+                <div>
+
+                    <h2>
+                        The truth is usually
+                        <em>buried.</em>
+                    </h2>
+
+                </div>
+
+                <div class="briefing-copy">
+
+                    <p>
+                        Information moves through people, organizations,
+                        cities and digital networks.
+                    </p>
+
+                    <p>
+                        Our analysts reconstruct those connections,
+                        identify anomalies and expose the story hidden
+                        beneath the surface.
+                    </p>
+
+                    <div class="signature">
+                        <span>  INTELLIGENCE OPERATIONS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             CASE FILES
+        ====================================================== -->
+
+        <section class="files section" id="files">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    <span>02</span>
+                    ACTIVE CASE FILES
+                </div>
+
+                <p>
+                    SELECT A FILE TO ACCESS INTELLIGENCE.
+                </p>
+
+            </div>
+
+            <div class="file-grid">
+
+                <article class="file-card" data-file="001">
+
+                    <div class="file-number">
+                        001
+                    </div>
+
+                    <div class="file-status">
+                        ACTIVE
+                    </div>
+
+                    <div class="file-content">
+
+                        <span>CASE TYPE // ORGANIZATION</span>
+
+                        <h3>
+                            THE ARCHITECT
+                        </h3>
+
+                        <p>
+                            A network operating across multiple
+                            jurisdictions with no identifiable leader.
+                        </p>
+
+                    </div>
+
+                    <div class="file-footer">
+                        <span>THREAT LEVEL 07</span>
+                        <span>→</span>
+                    </div>
+
+                </article>
+
+                <article class="file-card" data-file="002">
+
+                    <div class="file-number">
+                        002
+                    </div>
+
+                    <div class="file-status">
+                        WATCH
+                    </div>
+
+                    <div class="file-content">
+
+                        <span>CASE TYPE // INDIVIDUAL</span>
+
+                        <h3>
+                            NIGHTFALL
+                        </h3>
+
+                        <p>
+                            Identity unknown. Digital footprint
+                            disappears every 72 hours.
+                        </p>
+
+                    </div>
+
+                    <div class="file-footer">
+                        <span>THREAT LEVEL 05</span>
+                        <span>→</span>
+                    </div>
+
+                </article>
+
+                <article class="file-card" data-file="003">
+
+                    <div class="file-number">
+                        003
+                    </div>
+
+                    <div class="file-status danger">
+                        CRITICAL
+                    </div>
+
+                    <div class="file-content">
+
+                        <span>CASE TYPE // NETWORK</span>
+
+                        <h3>
+                            RED KING
+                        </h3>
+
+                        <p>
+                            Financial intelligence suggests a
+                            distributed criminal infrastructure.
+                        </p>
+
+                    </div>
+
+                    <div class="file-footer">
+                        <span>THREAT LEVEL 09</span>
+                        <span>→</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             INTELLIGENCE NETWORK
+        ====================================================== -->
+
+        <section class="network section" id="network">
+
+            <div class="network-header">
+
+                <div class="section-label">
+                    <span>03</span>
+                    INTELLIGENCE NETWORK
+                </div>
+
+                <div class="network-status">
+                    <span></span>
+                    NETWORK ONLINE
+                </div>
+
+            </div>
+
+            <div class="network-board">
+
+                <div class="network-lines"></div>
+
+                <div class="network-node node-a">
+                    <span></span>
+                    <strong>UNKNOWN</strong>
+                    <small>SUBJECT</small>
+                </div>
+
+                <div class="network-node node-b">
+                    <span></span>
+                    <strong>WASHINGTON</strong>
+                    <small>LOCATION</small>
+                </div>
+
+                <div class="network-node node-c">
+                    <span></span>
+                    <strong>EUROPE</strong>
+                    <small>NETWORK</small>
+                </div>
+
+                <div class="network-node node-d">
+                    <span></span>
+                    <strong>FINANCE</strong>
+                    <small>ACTIVITY</small>
+                </div>
+
+                <div class="network-center">
+                    <div class="radar"></div>
+                    <span>CORE</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             NUMBERS
+        ====================================================== -->
+
+        <section class="statistics section">
+
+            <div class="stat">
+                <strong data-count="127">0</strong>
+                <span>ACTIVE FILES</span>
+            </div>
+
+            <div class="stat">
+                <strong data-count="42">0</strong>
+                <span>OPERATIONS</span>
+            </div>
+
+            <div class="stat">
+                <strong data-count="19">0</strong>
+                <span>NETWORKS</span>
+            </div>
+
+            <div class="stat">
+                <strong data-count="08">0</strong>
+                <span>THREAT LEVEL</span>
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-inner">
+
+                <div>
+
+                    <div class="section-label">
+                        <span>04</span>
+                        SECURE CHANNEL
+                    </div>
+
+                    <h2>
+                        You know
+                        <em>where to find us.</em>
+                    </h2>
+
+                </div>
+
+                <form class="secure-form" id="secureForm">
+
+                    <div class="form-group">
+                        <label for="name">IDENTIFICATION</label>
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Enter designation"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">SECURE ADDRESS</label>
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="Enter secure address"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Transmit intelligence..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary submit-btn"
+                    >
+                        TRANSMIT
+                        <span>→</span>
+                    </button>
+
+                    <p
+                        class="form-message"
+                        id="formMessage"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-brand">
+            BLACKFILE
+        </div>
+
+        <div class="footer-meta">
+            <span>INTELLIGENCE DIVISION</span>
+            <span>© 2026</span>
+            <span>ALL RECORDS CLASSIFIED</span>
+        </div>
+
+    </footer>
+
+    <!-- =========================================================
+         FILE MODAL
+    ========================================================== -->
+
+    <div
+        class="modal"
+        id="fileModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-backdrop"></div>
+
+        <div class="modal-window">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close file"
+            >
+                ×
+            </button>
+
+            <div class="modal-classification">
+                CLASSIFIED DOCUMENT
+            </div>
+
+            <div class="modal-number">
+                CASE <span id="modalNumber">001</span>
+            </div>
+
+            <h2 id="modalTitle">
+                THE ARCHITECT
+            </h2>
+
+            <div class="redacted-line"></div>
+
+            <p id="modalDescription">
+                Intelligence file loaded.
+            </p>
+
+            <div class="modal-meta">
+
+                <div>
+                    <span>STATUS</span>
+                    <strong>ACTIVE</strong>
+                </div>
+
+                <div>
+                    <span>ACCESS</span>
+                    <strong>LEVEL 07</strong>
+                </div>
+
+                <div>
+                    <span>LOCATION</span>
+                    <strong>UNKNOWN</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
